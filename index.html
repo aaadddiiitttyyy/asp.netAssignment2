@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Image Gallery | COMP1073 Client-Side JavaScript</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <section id="gallery">
+        <figure>
+            <!-- Default featured image -->
+            <img id="featured-image" src="flowers-pink-large.jpg" alt="Pink Flowers" width="1200" height="800">
+            <figcaption id="image-caption">Pink Flowers</figcaption>
+        </figure>
+        <ul>
+            <!-- Thumbnails with onclick events to update the featured image -->
+            <li><img src="flowers-pink-small.jpg" alt="Pink Flowers" width="240" height="160" onclick="updateImage('flowers-pink', 'Pink Flowers')"></li>
+            <li><img src="flowers-purple-small.jpg" alt="Purple Flowers" width="240" height="160" onclick="updateImage('flowers-purple', 'Purple Flowers')"></li>
+            <li><img src="flowers-red-small.jpg" alt="Red Flowers" width="240" height="160" onclick="updateImage('flowers-red', 'Red Flowers')"></li>
+            <li><img src="flowers-white-small.jpg" alt="White Flowers" width="240" height="160" onclick="updateImage('flowers-white', 'White Flowers')"></li>
+            <li><img src="flowers-yellow-small.jpg" alt="Yellow Flowers" width="240" height="160" onclick="updateImage('flowers-yellow', 'Yellow Flowers')"></li>
+            <li><img src="flowers-pink-large.jpg" alt="Pink Flowers" width="240" height="160" onclick="updateImage('flowers-pink', 'Pink Flowers')"></li>
+            <li><img src="flowers-purple-large.jpg" alt="Pink Flowers" width="240" height="160" onclick="updateImage('flowers-purple', 'Purple Flowers')"></li>
+            <li><img src="flowers-red-large.jpg" alt="Pink Flowers" width="240" height="160" onclick="updateImage('flowers-red', 'red Flowers')"></li>
+            <li><img src="flowers-white-large.jpg" alt="Pink Flowers" width="240" height="160" onclick="updateImage('flowers-white', 'white Flowers')"></li>
+            <li><img src="flowers-yellow-large.jpg" alt="Pink Flowers" width="240" height="160" onclick="updateImage('flowers-yellow', 'yellow Flowers')"></li>
+        </ul>
+    </section>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

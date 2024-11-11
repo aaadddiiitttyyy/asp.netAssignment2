@@ -1,0 +1,121 @@
+/* Reset basic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Styling for the gallery section */
+#gallery {
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured image styling */
+#featured-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#featured-image:hover {
+    transform: scale(1.03);
+}
+
+figcaption {
+    font-size: 1.3em;
+    color: #555;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    border-top: 1px solid #eee;
+    background-color: #fafafa;
+}
+
+/* Thumbnail gallery styling */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+li {
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+}
+
+/* Thumbnail images styling */
+li img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    filter: grayscale(80%);
+    opacity: 0.8;
+}
+
+li img:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Active thumbnail styling */
+li.active img {
+    border-color: #007bff;
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Subtle box-shadow and rounded corners */
+#gallery,
+figure,
+ul li img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+body {
+    background-color: yellow;
+}
